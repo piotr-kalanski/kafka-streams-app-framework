@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.piotr-kalanski.kafka</groupId>
+            <groupId>com.github.piotr-kalanski</groupId>
             <artifactId>kafka-streams-app-common</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>

@@ -13,3 +13,6 @@
 
 # pom versions backup
 pom.xml.versionsBackup
+
+# Ignore target dirs
+target/

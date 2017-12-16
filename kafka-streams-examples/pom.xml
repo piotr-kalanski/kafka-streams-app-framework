@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>kafka-streams-app-framework</artifactId>
-        <groupId>com.github.piotr-kalanski.kafka</groupId>
-        <version>0.1</version>
+        <groupId>com.github.piotr-kalanski</groupId>
+        <version>0.1.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,9 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.piotr-kalanski.kafka</groupId>
+            <groupId>com.github.piotr-kalanski</groupId>
             <artifactId>kafka-streams-app-common</artifactId>
-            <version>0.1</version>
+            <version>0.1.1</version>
         </dependency>
 
         <dependency>

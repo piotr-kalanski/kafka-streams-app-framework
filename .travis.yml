@@ -12,7 +12,7 @@ cache:
   - "~/.m2/repository"
 before_install:
   - chmod +x ./cd/before-deploy.sh
-  - chmod +x ./cd/build.sh
+  - chmod +x ./cd/deploy.sh
 install: mvn install -P !build-extras -DskipTests=true -Dmaven.javadoc.skip=true -Dgpg.skip -B -V
 script: mvn test -P !build-extras -B
 after_success:

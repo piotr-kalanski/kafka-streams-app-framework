@@ -25,6 +25,7 @@ public class UserActionsDummyProducer {
         Random r = new Random();
 
         String[] eventTypes = new String[] {"LISTING_VIEW", "APPLICATION", "LOGIN", "REGISTER"};
+        String[] devices = new String[] {"DESKTOP", "MOBILE_APP", "MOBILE_WWW", "TABLE_WWW"};
 
         for(int i=0;i<1000;++i) {
             String userId = "user_" + r.nextInt(10);
@@ -39,6 +40,7 @@ public class UserActionsDummyProducer {
                             .setEventDate(DateTime.now())
                             .setListingId("" + r.nextInt(100))
                             .setUserId(userId)
+                            .setDevice(devices[r.nextInt(devices.length-1)])
                             .build()
             )).get();
         }

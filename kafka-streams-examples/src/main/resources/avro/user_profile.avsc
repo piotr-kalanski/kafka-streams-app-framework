@@ -2,12 +2,22 @@
   {
     "namespace": "com.datawizards.model",
     "type": "record",
+    "name": "DeviceUsage",
+    "fields": [
+      {"name": "device", "type": "string"},
+      {"name": "actions_count", "type": "long", "default": 0}
+    ]
+  },
+  {
+    "namespace": "com.datawizards.model",
+    "type": "record",
     "name": "UserProfile",
     "fields": [
       {"name": "user_id", "type": "string"},
       {"name": "actions_count", "type": "long", "default": 0},
       {"name": "last_action", "type": { "type" : "long", "logicalType" : "timestamp-millis" }, "default": 0},
-      {"name": "favourite_device", "type": ["null", "string"], "default": null}
+      {"name": "favourite_device", "type": ["null", "string"], "default": null},
+      {"name": "device_usage", "type": {"type": "array", "items": "com.datawizards.model.DeviceUsage"}, "default": []}
     ]
   }
 ]

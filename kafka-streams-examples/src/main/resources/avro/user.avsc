@@ -1,0 +1,10 @@
+{
+  "namespace": "com.datawizards.model",
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {"name": "id", "type": "string", "doc": "User ID"},
+    {"name": "first_name",  "type": "string", "doc": "first name"},
+    {"name": "last_name",  "type": "string"}
+  ]
+}

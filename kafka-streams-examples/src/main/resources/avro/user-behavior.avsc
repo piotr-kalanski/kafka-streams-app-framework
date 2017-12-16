@@ -1,0 +1,15 @@
+[
+  {"namespace": "com.datawizards.model",
+    "type": "record",
+    "name": "UserAction",
+    "fields": [
+      {"name": "event_id", "type": "string"},
+      {"name": "session_id", "type": "string"},
+      {"name": "event_type", "type": "string"},
+      {"name": "event_date", "type": { "type" : "long", "logicalType" : "timestamp-millis" }},
+      {"name": "user_id", "type": ["null", "string"], "default": null},
+      {"name": "listing_id", "type": ["null", "string"], "default": null},
+      {"name": "device", "type": ["null", "string"], "default": null}
+    ]
+  }
+]

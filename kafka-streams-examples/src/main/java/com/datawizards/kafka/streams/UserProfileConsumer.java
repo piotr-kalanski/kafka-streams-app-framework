@@ -1,4 +1,4 @@
-package com.datawizards.kafka.stream;
+package com.datawizards.kafka.streams;
 
 import com.datawizards.model.UserProfile;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

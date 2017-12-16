@@ -1,0 +1,20 @@
+[
+  {
+    "namespace": "${groupId}",
+    "type": "record",
+    "name": "Record1",
+    "fields": [
+      {"name": "field1", "type": "string"},
+      {"name": "field2", "type": "string"}
+    ]
+  },
+  {
+    "namespace": "${groupId}",
+    "type": "record",
+    "name": "Record2",
+    "fields": [
+      {"name": "field1", "type": "string"},
+      {"name": "field2", "type": "string"}
+    ]
+  }
+]

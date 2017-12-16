@@ -1,4 +1,4 @@
-package com.datawizards.kafka.stream;
+package com.datawizards.kafka.streams;
 
 import com.datawizards.model.UserAction;
 import org.apache.kafka.clients.producer.KafkaProducer;

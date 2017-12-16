@@ -1,4 +1,4 @@
-package com.datawizards.kafka.stream;
+package com.datawizards.kafka.streams;
 
 import com.datawizards.kafka.streams.app.KafkaStreamsApplicationBase;
 import com.datawizards.model.DeviceUsage;
@@ -61,7 +61,7 @@ public class ApplicationMain extends KafkaStreamsApplicationBase {
                 .build();
     }
 
-    private List<DeviceUsage> calculateDeviceUsage(UserAction action, List<DeviceUsage> oldDeviceUsage) {
+    protected List<DeviceUsage> calculateDeviceUsage(UserAction action, List<DeviceUsage> oldDeviceUsage) {
         if(oldDeviceUsage.stream().allMatch(d -> !d.getDevice().equals(action.getDevice()))) {
             if(action.getDevice() != null) {
                 oldDeviceUsage.add(
@@ -87,7 +87,7 @@ public class ApplicationMain extends KafkaStreamsApplicationBase {
         }
     }
 
-    private CharSequence calculateFavouriteDevice(List<DeviceUsage> deviceUsage) {
+    protected CharSequence calculateFavouriteDevice(List<DeviceUsage> deviceUsage) {
         return deviceUsage.isEmpty() ? null : deviceUsage
                 .stream()
                 .max(Comparator.comparing(DeviceUsage::getActionsCount))

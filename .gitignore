@@ -10,3 +10,6 @@
 # IDEA
 .idea/
 *.iml
+
+# pom versions backup
+pom.xml.versionsBackup

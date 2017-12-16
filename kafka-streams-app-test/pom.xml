@@ -5,7 +5,7 @@
     <parent>
         <artifactId>kafka-streams-app-framework</artifactId>
         <groupId>com.github.piotr-kalanski.kafka</groupId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

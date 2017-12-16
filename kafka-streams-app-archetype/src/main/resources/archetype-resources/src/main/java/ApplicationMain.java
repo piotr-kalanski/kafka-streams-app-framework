@@ -13,7 +13,7 @@ public class ApplicationMain extends KafkaStreamsApplicationBase {
     }
 
     protected void buildTopology(KStreamBuilder builder) {
-        // TODO - build Kafka Streams topology
+        // TODO - build here Kafka Streams topology
 
         KStream<String, String> stream = builder.stream("TOPIC ???");
         //outputStream.to("output topic ???");

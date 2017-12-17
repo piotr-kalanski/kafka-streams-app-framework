@@ -10,19 +10,28 @@
     <properties>
         <avro.version>1.8.2</avro.version>
         <junit.version>4.12</junit.version>
+        <!-- Change version of framework if needed -->
+        <kafka.streams.app.framework.version>0.1.4</kafka.streams.app.framework.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.github.piotr-kalanski</groupId>
             <artifactId>kafka-streams-app-common</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>${kafka.streams.app.framework.version}</version>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.piotr-kalanski</groupId>
+            <artifactId>kafka-streams-app-test</artifactId>
+            <version>${kafka.streams.app.framework.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

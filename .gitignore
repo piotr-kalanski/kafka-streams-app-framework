@@ -16,3 +16,6 @@ pom.xml.versionsBackup
 
 # Ignore target dirs
 target/
+
+# Key for signing
+codesigning.asc
